@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="WeddingPage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>PixelStudio - Wedding</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navigation">
+      <a id="logo" href="Home.html" title="Click here to go Home">
+        <img src="Photos/NavLogo.png" alt="Logo" />
+      </a>
+      <div id="menu" class="nav-links">
+        <i id="icon" class="fa fa-window-close" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="Home.html" title="Click here to go Home">Home</a></li>
+          <li>
+            <a href="Services.html" title="Click here to see our services">Services</a>
+          </li>
+          <li>
+            <a href="Shop.html" title="Click here to view our shop">Shop</a>
+          </li>
+          <li>
+            <a href="Contact.html" title="Click here to contact us">Contact</a>
+          </li>
+          <li>
+            <div>
+              <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <i id="icon" class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </header>
+
+    <div class="hero1">
+        <div class="text1">
+            <h1>Wedding Photography</h1>
+        </div>
+    </div>
+
+
+    <div id="intro-box">
+       <div class="IntroText">
+        <p> Wedding photography is a cherished art form that beautifully captures the essence and emotions of one of life's most significant moments. 
+            A skilled wedding photographer possesses a keen eye for detail, composition, and the ability to freeze fleeting moments in time.  <br> <br>
+            
+            They expertly navigate various lighting conditions, ensuring that every frame reflects the warmth and love that permeates the air. 
+            With their creativity, technical prowess, and knack for capturing candid moments, wedding photographers create a treasure trove of images that become lifelong memories for the couple and their loved ones.
+             <br> <br>
+            
+             Wedding photography immortalizes the fleeting moments that make up the tapestry of a love-filled celebration.</p>
+        </div>
+        <div class="ImageBox">
+            <img class="IntroImage" src="Photos/WeddingPage/Wedding2.jpg" alt="">
+            </div> 
+    </div>
+
+
+    <div id="enquire-container">
+        <div><img class="wedding-image" src="Photos/WeddingPage/Wedding3.jpg" alt="Wedding Image1"></div>
+        <div><img class="wedding-image" src="Photos/WeddingPage/Wedding4.jpg" alt="Wedding Image2"></div>
+        <div id="price-container">
+            <h1>Pricing</h1> <br> <br>
+            <div>
+            <h2>Prewedding: RM5000 <br> <br>
+                Actual Wedding : Rm6000</h2> <br> <br>
+
+                <h2><a href="Contact.html">Enquire Now</a></h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery-div">
+        <h1  style="font-weight: 700; font-size: 40px;">Gallery</h1> <br>
+    </div>
+
+    <div class="row2">
+        <div class="column2">
+          <img src="Photos/WeddingPage/GalleryWedding1.jpg" alt="" style="width:100%">
+        </div>
+        <div class="column2">
+          <img src="Photos/WeddingPage/GalleryWedding2.jpg" alt="" style="width:100%">
+        </div>
+        <div class="column2">
+          <img src="Photos/WeddingPage/GalleryWedding3.jpg" alt="" style="width:100%">
+        </div>
+      </div>
+
+
+      <div id="footer">
+        <div>
+          <img class="footer-logo" src="Photos/FooterLogo.png" alt="Footer Logo" />
+          <div class="icons">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+              <a href="#"><i class="fa fa-envelope-o"></i></a>
+          </div>
+          <h2 class="footer-text">Contact Us</h2>
+        </div>
+      </div>
+    
+     <script>
+          var menu = document.getElementById("menu");
+    
+          function size() {
+            var width = window.innerWidth;
+    
+            document.getElementById("menu").style.display = "block";
+          }
+    
+          window.addEventListener("resize", size);
+    
+          function showMenu() {
+            menu.style.display = "block";
+          }
+    
+          function hideMenu() {
+            menu.style.display = "none";
+          }
+    
+          size();
+        </script>
+    
+    </body>
+    
+    </html>

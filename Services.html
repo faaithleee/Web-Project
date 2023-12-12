@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="services.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>PixelStudio - Services</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navigation">
+      <a id="logo" href="Home.html" title="Click here to go Home">
+        <img src="Photos/NavLogo.png" alt="Logo" />
+      </a>
+      <div id="menu" class="nav-links">
+        <i id="icon" class="fa fa-window-close" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="Home.html" title="Click here to go Home">Home</a></li>
+          <li>
+            <a href="Services.html" title="Click here to see our services">Services</a>
+          </li>
+          <li>
+            <a href="Shop.html" title="Click here to view our shop">Shop</a>
+          </li>
+          <li>
+            <a href="Contact.html" title="Click here to contact us">Contact</a>
+          </li>
+          <li>
+            <div>
+              <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <i id="icon" class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </header>
+
+  <div id="header-container">
+  <div class="hero1">
+    <div class="text1">
+      <h1>Our Services</h1>
+    </div>
+  </div>
+  </div>
+
+  <a class="image-links" href="WeddingPage.html">
+  <div id="hero-container">
+  <div class="heroService1">
+    <dir class="heroText">
+      <h1>Wedding Photography</h1>
+    </dir>
+  </div>
+</div>
+</a>
+
+
+<a class="image-links" href="#">
+<div id="hero-container">
+  <div class="heroService2">
+    <dir class="heroText">
+      <h1>Pet Portraits</h1>
+    </dir>
+  </div>
+</div>
+</a>
+
+
+<a class="image-links" href="#">
+<div id="hero-container">
+  <div class="heroService3">
+    <dir class="heroText">
+      <h1>Landscape</h1>
+    </dir>
+  </div>
+</div>
+</a>
+
+  <div id="footer">
+    <div>
+      <img class="footer-logo" src="Photos/FooterLogo.png" alt="Footer Logo" />
+      <div class="icons">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-whatsapp"></i></a>
+        <a href="#"><i class="fa fa-envelope-o"></i></a>
+      </div>
+      <h2 class="footer-text">Contact Us</h2>
+    </div>
+  </div>
+
+  <script>
+    var menu = document.getElementById("menu");
+
+    function size() {
+      var width = window.innerWidth;
+
+      document.getElementById("menu").style.display = "block";
+    }
+
+    window.addEventListener("resize", size);
+
+    function showMenu() {
+      menu.style.display = "block";
+    }
+
+    function hideMenu() {
+      menu.style.display = "none";
+    }
+
+    size();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>PixelStudio - Home</title>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navigation">
+        <a id="logo" href="Home.html" title="Click here to go Home">
+          <img src="Photos/NavLogo.png" alt="Logo" />
+        </a>
+        <div id="menu" class="nav-links">
+          <i id="icon" class="fa fa-window-close" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="Home.html" title="Click here to go Home">Home</a></li>
+            <li>
+              <a href="Services.html" title="Click here to see our services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="Shop.html" title="Click here to view our shop">Shop</a>
+            </li>
+            <li>
+              <a href="Contact.html" title="Click here to contact us"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <div>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <i id="icon" class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </header>
+
+    <div>
+      <img id="home-header" src="Photos/Home/homeImage.png" alt="HeaderImage" />
+    </div>
+
+    <div id="about-container">
+      <div class="about-heading">
+        <h1>ABOUT US</h1>
+      </div>
+      <div class="about-text">
+        <p>
+          We are a team of passionate photographers who love capturing the
+          beauty of life in all its forms. We specialize in wedding photography,
+          pet portraits, and landscape photography, and we also sell prints of
+          our work. <br />
+          <br />
+          We believe that photography is a powerful way to tell stories and
+          preserve memories. We strive to create images that are both beautiful
+          and meaningful, and we want our clients to cherish our photographs for
+          years to come. <br />
+          <br />
+          We are dedicated to providing our clients with the highest quality
+          service. We are always available to answer your questions and help you
+          plan your photography session. We also offer a variety of packages to
+          fit your budget. <br />
+          <br />
+          We would be honored to capture your special moments. Please contact us
+          today to learn more about our services.
+        </p>
+      </div>
+    </div>
+
+    <div id="about-container">
+      <div class="about-heading">
+        <h1>Our Works</h1>
+      </div>
+    </div>
+
+    <div id="hero-container">
+      <div class="heroService1">
+        <div class="heroText">
+          <h1>Wedding Photography</h1>
+        </div>
+      </div>
+
+      <div class="heroService2">
+        <div class="heroText">
+          <h1>Pet Portraits</h1>
+        </div>
+      </div>
+
+      <div class="heroService3">
+        <div class="heroText">
+          <h1>Landscape</h1>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="about-container">
+        <div class="about-heading">
+          <h1>Wedding Photography</h1>
+        </div>
+      </div>
+  
+      <div id="works-container">
+        <div class="image-container">
+            <img class="image-container" src="Photos/WeddingPage/Wedding2.jpg" alt="wedding image 1">
+        </div>
+  
+        <div class="image-container">
+            <img class="image-container" src="Photos/WeddingPage/GalleryWedding1.jpg" alt="wedding image 2">
+        </div>
+  
+        <div class="image-container">
+            <img class="image-container" src="Photos/WeddingPage/GalleryWedding2.jpg" alt="wedding image 3">
+        </div>
+      </div>
+
+      <div id="about-container">
+        <div class="about-heading">
+          <h1>Pet Portraits</h1>
+        </div>
+      </div>
+  
+      <div id="works-container">
+        <div class="image-container">
+            <img class="image-container" src="Photos/Home/pet1.jpg" alt="pet image 1">
+        </div>
+  
+        <div class="image-container">
+            <img class="image-container" src="Photos/Home/pet3.jpg" alt="pet image 2">
+        </div>
+  
+        <div class="image-container">
+            <img class="image-container" src="Photos/Home/pet2.jpg" alt="pet image 3">
+        </div>
+      </div>
+
+      <div id="about-container">
+        <div class="about-heading">
+          <h1>Landscape Photography</h1>
+        </div>
+      </div>
+  
+      <div id="last-container">
+        <div class="landscape-container">
+            <img class="landscape-container" src="Photos/ShopPage/Flower.jpg" alt="landscape 1">
+        </div>
+  
+        <div class="landscape-container">
+            <img class="landscape-container" src="Photos/ShopPage/Tunnel.jpg" alt="landscape 2">
+        </div>
+  
+        <div class="image-container">
+            <img class="landscape-container" src="Photos/ShopPage/Mountain.jpg" alt="landscape 3">
+      </div>
+ </div>
+      
+
+    <div id="footer">
+      <div>
+        <img
+          class="footer-logo"
+          src="Photos/FooterLogo.png"
+          alt="Footer Logo"
+        />
+        <div class="icons">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-envelope-o"></i></a>
+        </div>
+        <h2 class="footer-text">Contact Us</h2>
+      </div>
+    </div>
+
+    <script>
+      var menu = document.getElementById("menu");
+
+      function size() {
+        var width = window.innerWidth;
+
+        document.getElementById("menu").style.display = "block";
+      }
+
+      window.addEventListener("resize", size);
+
+      function showMenu() {
+        menu.style.display = "block";
+      }
+
+      function hideMenu() {
+        menu.style.display = "none";
+      }
+
+      size();
+    </script>
+  </body>
+</html>

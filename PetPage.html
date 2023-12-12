@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="PetPage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>PixelStudio - Pet</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navigation">
+      <a id="logo" href="Home.html" title="Click here to go Home">
+        <img src="Photos/NavLogo.png" alt="Logo" />
+      </a>
+      <div id="menu" class="nav-links">
+        <i id="icon" class="fa fa-window-close" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="Home.html" title="Click here to go Home">Home</a></li>
+          <li>
+            <a href="Services.html" title="Click here to see our services">Services</a>
+          </li>
+          <li>
+            <a href="Shop.html" title="Click here to view our shop">Shop</a>
+          </li>
+          <li>
+            <a href="Contact.html" title="Click here to contact us">Contact</a>
+          </li>
+          <li>
+            <div>
+              <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <i id="icon" class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </header>
+
+    <div class="hero1">
+        <div class="text1">
+            <h1>Pet Portraits</h1>
+        </div>
+    </div>
+
+
+    <div id="intro-box">
+        <div class="ImageBox">
+            <img class="IntroImage" src="Photos/PetPage/Pet2.jpg" alt="">
+            </div> 
+        <div class="IntroText">
+            <p> Pet portraits are a delightful way to capture the unique personality, charm, and unconditional love that our furry companions bring into our lives.
+                A skilled pet portrait artist or photographer has the ability to showcase the essence of each individual pet, from their adorable quirks to their expressive eyes and playful nature.   <br> <br>
+                    
+                Whether it's a regal cat striking a pose, a mischievous pup with a wagging tail, or a fluffy bunny showcasing their inquisitive nature, pet portraits encapsulate the undeniable bond between humans and animals.  
+                The artist's attention to detail, use of color and texture, and ability to capture the perfect moment create captivating images that evoke joy, warmth, and a deep connection to our beloved companions. 
+                <br> <br>
+                    
+                Pet portraits not only celebrate the beauty of our pets, but they also serve as cherished mementos that allow us to keep our furry friends close to our hearts for years to come.</p>
+            </div>
+    </div>
+
+
+    <div id="enquire-container">
+        <div id="price-container">
+            <h1>Pricing</h1> <br> <br>
+            <div>
+            <h2>Pet Portraits - <br> <br>
+                From RM800 </h2> <br> <br>
+
+                <h2><a href="Contact.html">Enquire Now</a></h2>
+            </div>
+        </div>
+        <div><img class="pet-image" src="Photos/PetPage/Pet3.jpg" alt="Pet Image1"></div>
+        <div><img class="pet-image" src="Photos/PetPage/Pet4.jpg" alt="Pet Image2"></div>
+    
+    </div>
+
+    <div id="gallery-div">
+        <h1  style="font-weight: 700; font-size: 40px;">Gallery</h1> <br>
+    </div>
+
+    <div class="row2">
+        <div class="column2">
+          <img src="Photos/PetPage/GalleryPet1.jpg" alt="" style="width:100%">
+        </div>
+        <div class="column2">
+          <img src="Photos/PetPage/GalleryPet2.jpg" alt="" style="width:100%">
+        </div>
+        <div class="column2">
+          <img src="Photos/PetPage/GalleryPet3.jpg" alt="" style="width:100%">
+        </div>
+      </div>
+
+
+      <div id="footer">
+        <div>
+          <img class="footer-logo" src="Photos/FooterLogo.png" alt="Footer Logo" />
+          <div class="icons">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+              <a href="#"><i class="fa fa-envelope-o"></i></a>
+          </div>
+          <h2 class="footer-text">Contact Us</h2>
+        </div>
+      </div>
+    
+     <script>
+          var menu = document.getElementById("menu");
+    
+          function size() {
+            var width = window.innerWidth;
+    
+            document.getElementById("menu").style.display = "block";
+          }
+    
+          window.addEventListener("resize", size);
+    
+          function showMenu() {
+            menu.style.display = "block";
+          }
+    
+          function hideMenu() {
+            menu.style.display = "none";
+          }
+    
+          size();
+        </script>
+    
+    </body>
+    
+    </html>

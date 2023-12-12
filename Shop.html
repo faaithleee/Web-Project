@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>PixelStudio - Shop</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navigation">
+      <a id="logo" href="Home.html" title="Click here to go Home">
+        <img src="Photos/NavLogo.png" alt="Logo" />
+      </a>
+      <div id="menu" class="nav-links">
+        <i id="icon" class="fa fa-window-close" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="Home.html" title="Click here to go Home">Home</a></li>
+          <li>
+            <a href="Services.html" title="Click here to see our services">Services</a>
+          </li>
+          <li>
+            <a href="Shop.html" title="Click here to view our shop">Shop</a>
+          </li>
+          <li>
+            <a href="Contact.html" title="Click here to contact us">Contact</a>
+          </li>
+          <li>
+            <div>
+              <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <i id="icon" class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </header>
+
+  <div id="header-image" >
+    <img id="header-image" src="Photos/ShopPage/LakeViewHeader.jpg" alt="HeaderImage">
+</div>
+
+<div id="intro-box">
+   <div>
+    <img class="intro-image" src="Photos/ShopPage/IntroImage.jpg" alt="">
+    </div> 
+   <div class="IntroText">
+    <h1  style="font-weight: 700; font-size: 40px;">Shop</h1> <br>
+    <p>We offer a wide selection of high-quality HD prints of black and white photographs and coloured 
+        landscape photographs. Our prints are perfect for adding a touch of elegance and sophistication to 
+        any home or office. <br> <br>
+        
+        All of our prints are printed on high-quality museum-grade paper of art prints and each one tells 
+        its own story. <br> <br>
+        
+        Our HD prints are made using a high-quality dye sublimation process. This process involves printing 
+        the image onto a special paper using dye sublimation inks. The paper is then placed on a metal 
+        substrate and heat is applied. The heat causes the dyes to sublimate, or change from a solid to a gas. 
+        The gas then infuses into the metal substrate, creating a permanent, high-quality image. <br> <br>
+        
+        We are confident that you will be satisfied with the quality of our prints. We offer a satisfaction 
+        guarantee, so you can be sure that you're happy with your purchase.</p>
+    </div>
+</div>
+
+<br> <br> <br>
+
+<div id="selection-box">
+    <div class="hero1">
+        <div class="text1">
+            <h1>Black <br> & <br> White</h1>
+        </div>
+    </div>
+    <div class="hero2">
+        <div class="text2">
+            <h1>Coloured Landscape</h1>
+        </div >
+    </div>
+</div>
+
+<br> <br> <br>
+
+<div id="bw-div">
+    <h1  style="font-weight: 700; font-size: 40px;">Black & White</h1> <br>
+</div>
+
+<div id="bw-container">
+    <div class="ShopPrice">
+        <img class="ShopImage" src="Photos/ShopPage/Tunnel.jpg" alt="Tunnel"> <br> <br>
+        <p>A light at the end of the tunnel <br>
+            RM 350 <br> <br> 
+            <a href="">ADD TO CART</a></p>
+    </div>
+    <div class="ShopPrice">
+        <img class="ShopImage" src="Photos/ShopPage/Reeds.jpg" alt="Reeds"> <br> <br>
+        <p>Echoing spaces<br>
+            RM 150 <br> <br> 
+            <a href="">ADD TO CART</a></p>
+    </div>
+    <div class="ShopPrice">
+        <img class="ShopImage" src="Photos/ShopPage/Stairs.jpeg" alt="stairs"> <br> <br>
+        <p>Stairways from heaven<br>
+            RM 200 <br> <br> 
+            <a href="">ADD TO CART</a></p>
+    </div>
+</div>
+
+<div id="colour-div">
+    <h1  style="font-weight: 700; font-size: 40px;">Coloured Landscapes</h1> <br>
+</div>
+
+<div id="colour-container">
+    <div class="ShopPrice">
+        <img class="ShopImage" src="Photos/ShopPage/Mountain.jpg" alt="mountain"> <br> <br>
+        <p>A light at the end of the tunnel <br>
+            RM 350 <br> <br> 
+            <a href="#">ADD TO CART</a></p>
+    </div>
+    <div class="ShopPrice">
+        <img class="ShopImage" src="Photos/ShopPage/Lava.jpg" alt="lava"> <br> <br>
+        <p>Echoing spaces<br>
+            RM 150 <br> <br> 
+            <a href="#">ADD TO CART</a></p>
+    </div>
+    <div class="ShopPrice">
+        <img class="ShopImage" src="Photos/ShopPage/Flower.jpg" alt="flower"> <br> <br>
+        <p>Stairways from heaven<br>
+            RM 200 <br> <br> 
+            <a href="#">ADD TO CART</a></p>
+    </div>
+</div>
+
+
+
+  <div id="footer">
+    <div>
+      <img class="footer-logo" src="Photos/FooterLogo.png" alt="Footer Logo" />
+      <div class="icons">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-envelope-o"></i></a>
+      </div>
+      <h2 class="footer-text">Contact Us</h2>
+    </div>
+  </div>
+
+ <script>
+      var menu = document.getElementById("menu");
+
+      function size() {
+        var width = window.innerWidth;
+
+        document.getElementById("menu").style.display = "block";
+      }
+
+      window.addEventListener("resize", size);
+
+      function showMenu() {
+        menu.style.display = "block";
+      }
+
+      function hideMenu() {
+        menu.style.display = "none";
+      }
+
+      size();
+    </script>
+
+</body>
+
+</html>

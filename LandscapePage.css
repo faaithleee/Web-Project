@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ecf0ef;
+  }
+  
+  #navigation {
+    background-color: #c1ccdd;
+    border-style: solid;
+    border-width: 3px 3px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  #logo {
+    display: flex;
+    height: 80%;
+    max-width: auto;
+  }
+  
+  .nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  ul li a {
+    font-weight: 900;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    justify-content: left;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px 20px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    background-color: white;
+    text-decoration: underline;
+  }
+  
+  nav #icon {
+    display: none;
+  }
+  
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding: 20px 0px;
+    margin-top: 40px;
+    background-color: #c8c8c8;
+    color: black;
+  }
+  
+  #footer div {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 120px;
+  }
+  
+  .icons {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .fa {
+    color: black;
+  }
+  
+  .FooterText {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    padding: 5px;
+  }
+  
+  .hero1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(Photos/LandscapePage/Landscape1.jpg);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 10px black solid;
+  }
+  
+  .text1 {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-top: 240px;
+  }
+  
+  #intro-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: none;
+    text-align: center;
+  }
+  
+  .ImageBox {
+    margin-top: 80px;
+    margin-right: 20px;
+  }
+  
+  .IntroImage {
+    display: flex;
+    width: auto;
+    height: 400px;
+  }
+  
+  .IntroText {
+    margin-top: 90px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 800px) {
+    #intro-box {
+      flex-direction: column;
+      margin-left: none;
+      padding: none;
+    }
+    .IntroImage {
+      width: 100%;
+      height: auto;
+      align-items: center;
+    }
+  }
+  
+  #enquire-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 300px;
+  }
+  
+  .landscape-image {
+    height: 300px;
+    max-width: auto;
+  }
+  
+  #price-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 300px;
+    max-width: auto;
+    background-color: #c1ccdd;
+    border: 5px solid black;
+    padding: 20px;
+  }
+  
+  #pricelist-div {
+    text-align: center;
+    width: 100%;
+    padding: 36px;
+    border: 5px solid gray;
+    margin: 0;
+    background: #ddc1c9;
+  }
+  
+  #gallery-div {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .column2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  @media (max-width: 800px) {
+    #enquire-container {
+      display: flex;
+      row-gap: 30px;
+      flex-direction: column;
+      height: 100%;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links {
+      display: block;
+      position: absolute;
+      background-color: #c1ddd8;
+      border-style: solid;
+      border-width: 3px 3px;
+      height: 60%;
+      width: 200px;
+      top: 0px;
+      right: 0px;
+      transition: 1s;
+    }
+    #logo {
+      height: 60%;
+    }
+    nav #icon {
+      display: block;
+      color: black;
+      font-size: 22px;
+      margin-top: 10px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  

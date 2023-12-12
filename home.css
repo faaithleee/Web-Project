@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  body {
+    background-color: #ecf0ef;
+  }
+  
+  #navigation {
+    background-color: #c1ddd8;
+    border-style: solid;
+    border-width: 3px 3px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  #logo {
+    display: flex;
+    height: 75%;
+    max-width: auto;
+  }
+  
+  .nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  ul li a {
+    font-weight: 900;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    justify-content: left;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px 20px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    background-color: white;
+    text-decoration: underline;
+  }
+  
+  nav #icon {
+    display: none;
+  }
+  
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding: 20px 0px;
+    margin-top: 40px;
+    background-color: #c8c8c8;
+    color: black;
+  }
+  
+  #footer div {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 120px;
+  }
+  
+  .icons {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .fa {
+    color: black;
+  }
+  
+  .FooterText {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    padding: 5px;
+  }
+
+  #home-header {
+    display: flex;
+    justify-content: first baseline;
+    height: 900px;
+    width: 100%;
+    margin: none;
+    padding: none;
+  }
+
+  #about-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    text-align: center;
+    width: 75%;
+    padding: 50px;
+  }
+
+  #hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-top: 40px; 
+    margin-bottom: 50px;
+  }
+  
+  .heroService1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(Photos/Services/Wedding.jpg);
+    height: 600px;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+  
+  .heroService2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(Photos/Services/Pets.jpg);
+    height: 600px;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .heroService3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(Photos/Services/Landscape.jpg);
+    height: 600px;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .heroText {
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 260px;
+  }
+  
+   a {
+    text-decoration: none;
+  }
+
+  #works-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+  }
+
+  #last-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .image-container {
+    height: 300px;
+    width: auto;
+  }
+
+  .landscape-container {
+    height: 300px;
+    max-width: 90%;
+  }
+
+
+  @media (max-width: 800px) {
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links {
+      display: block;
+      position: absolute;
+      background-color: #c1ddd8;
+      border-style: solid;
+      border-width: 3px 3px;
+      height: 60%;
+      width: 200px;
+      top: 0px;
+      right: 0px;
+      transition: 1s;
+    }
+    #logo {
+      height: 60%;
+    }
+    nav #icon {
+      display: block;
+      color: black;
+      font-size: 22px;
+      margin-top: 10px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+    #about-container{
+        display: flex;
+        text-align: center;
+    }
+    .landscape-container, .image-container {
+        justify-content: center;
+        max-width: 300px;
+    }
+    #home-header {
+        display: flex;
+        height: 300px;
+        max-width: auto;
+    }
+    #about-container {
+        display: flex;
+        justify-content: center;
+    }
+    #hero-container, #works-container, #last-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .heroService1, .heroService2, .heroService3 {
+        height: 400px;
+        width: 100%;
+    }
+    .heroText {
+        margin-top: 200px;
+    }
+
+  }
+  
